@@ -64,6 +64,8 @@ Plugin 'jmcantrell/vim-virtualenv'
 Plugin 'Lokaltog/powerline', {'rtp': 'powerline/bindings/vim/'}
 " Material Theme
 Plugin 'hzchirs/vim-material'
+" Markdown Previewer
+Plugin 'iamcco/markdown-preview.vim'
 
 
 " NERD Tree Configuration
@@ -87,7 +89,14 @@ syntax on
 map <F5> :NERDTreeTabsToggle<Enter> " Use F5 for Nerd Tree Tabs Toggle
 set nu " Numbering
 
+" Small Tweak to use <F1> for finding information about the highlighting of
+" what's under the cursor
 nm <silent> <F1> :echo "hi<" . synIDattr(synID(line("."),col("."),1),"name")
     \ . '> trans<' . synIDattr(synID(line("."),col("."),0),"name")
     \ . "> lo<" . synIDattr(synIDtrans(synID(line("."),col("."),1)),"name")
     \ . ">"<CR>
+
+" For Searching, enable smartcase and highlighting
+set ignorecase
+set smartcase
+set hlsearch
