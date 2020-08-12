@@ -7,5 +7,6 @@
 - [Tmux Configuration File](tmux.conf): Vim Keybindings and Color Correction
 - [Readline inputrc File](inputrc): Use Vim Keybindings and Rectify Ctrl-L Clear Screen
 - [Zsh Configuration File](zshrc): Oh-My-Zsh Configuration, Theme, Aliases and other customizations
+- [Windows Terminal Configuration File](settings.json): Colorscheme, Fonts and more.
 
 **Note: Hidden Files on Linux that start with a period (e.g., `.vimrc` and `.tmux.conf`) have the starting period stripped for not treating it as hidden**
